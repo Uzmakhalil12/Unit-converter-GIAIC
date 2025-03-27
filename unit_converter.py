@@ -28,12 +28,12 @@ unit_to = st.selectbox("To", list(time_units.keys()))
 time_value = st.number_input("Value" , min_value=0.0, format="%.2f")
 
 if st.button("Convert Time Unit"):
-    if time_value == 1:
-        result = convert_time(time_value, unit_from, unit_to)
+    if from_unit == to unit:
+         st.error("Please select a conversion type")
+        
+else:
+     result = convert_time(time_value, unit_from, unit_to)
         st.success(f"{time_value} {unit_from} = {result:.2f} {unit_to}")
 
-    
-else:
-    st.error("Please select a conversion type")
 
 
