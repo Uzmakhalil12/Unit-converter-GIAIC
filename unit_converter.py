@@ -28,7 +28,7 @@ unit_to = st.selectbox("To", list(time_units.keys()))
 time_value = st.number_input("Value" , min_value=0.0, format="%.2f")
 
 if st.button("Convert Time Unit"):
-    if time_value == 100:
+    if time_value == 10:
           result = convert_time(time_value, unit_from, unit_to)
           st.success(f"{time_value} {unit_from} = {result:.2f} {unit_to}")
         
